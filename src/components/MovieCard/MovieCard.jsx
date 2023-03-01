@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Container, Poster } from './MovieCard.styled';
 
 export const MovieCard = ({ data }) => {
@@ -32,4 +33,8 @@ export const MovieCard = ({ data }) => {
       </div>
     </Container>
   );
+};
+
+MovieCard.propTypes = {
+  data: PropTypes.object.isRequired,
 };
